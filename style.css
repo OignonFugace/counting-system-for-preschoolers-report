@@ -1,0 +1,73 @@
+
+/* LAYOUT & GLOBALS */
+
+body {
+    font-size: 1.1rem;
+}
+
+p {
+    line-height: 1.73rem;
+}
+
+#site-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 2rem;
+}
+
+main {
+    margin-bottom: 100px;
+}
+
+img {
+    width: 80%;
+    margin: 8px auto;
+}
+
+h2 {
+    margin-top: 3rem;
+    margin-bottom: 0.8rem;
+}
+
+h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* HEADER */
+.project-authors {
+    margin-bottom: 100px;
+    text-align: right;
+}
+
+.project-authors p {
+    margin: 0;
+}
+
+/* TOC NAV */
+nav[data-toggle="toc"] {
+  top: 42px;
+}
+
+/* small screens */
+@media (max-width: 768px) {
+  /* override stickyness so that the navigation does not follow scrolling */
+  nav[data-toggle="toc"] {
+    margin-bottom: 42px;
+    position: static;
+  }
+
+  /* don't expand nested items, which pushes down the rest of the page when navigating */
+  nav[data-toggle="toc"] .nav .active .nav {
+    display: none;
+  }
+}
+
+
+/* Anchors */
+.anchorjs-link {
+  color: #767676;
+}
+.anchorjs-link:hover {
+  color: #3a3a3a;
+}

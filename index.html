@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./bootstrap-toc.css">
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+
+    <title>Counting system for preschoolers</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#toc"> 
+    <div id="site-wrapper" class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+            </div>
+            <div class="col-sm-9">
+                <header>
+                    <div class="project-authors fst-italic fw-lighter">
+                        <p>Benjamin Le Carrer</p>
+                        <p>Manon Rouvelet</p>
+                    </div>
+                    <h1 class="display-3">Counting system for preschoolers</h1>
+                </header>
+                <main>
+                    <h2>1. Context</h2>
+                    <p>For kindergarten children, we know it can be hard to stay focused and to learn new things like reading or counting. In the times that we live in, these children may find it difficult to concentrate on classic learning games. Thus the idea of creating a new interactive game using computers appeared.</p>
+                    <h2>2. Explanation of the problem</h2>
+                    <p>The question we asked ourselves is how to interest a 5-year-old child in learning to count. The current methods that are used are abacus or to simply learn with their fingers. These methods can end up being boring, hence losing their focus.</p>
+                    <p>Moreover, if no one is behind them to check what they are doing, they can very quickly make a mistake without realizing it. To do this, using a computer or something interactive with children could improve their concentration, and it can also correct its errors.</p>
+                    <h2>3. Related work / State of the art</h2>
+                    <p>We struggled to find any related work, there is some work about the benefits of computer aided education, but unfortunately nothing using tangible devices. The work of Zaranis et al. [1] presents some work on a tablet, while the study found that using tablet computers with numeracy-focused software improves children's early math skills, it did so using only software.</p>
+                    <h2>4. Approach to the problem</h2>
+                    <p>We proposed a new simple game consisting of a box with buttons and LEDs as well as a monitor (computer giving instructions). </p>
+                    <p>The idea is to capture their attention as much as possible.</p>
+                    <p>First, with instructions that are given on the computer rather than on paper. It can be digital numbers, numbers with hands or numbers with dices. (See Figure n°)</p>
+                    <p>In addition, colored LEDs are added on the box. There are two columns of 10 LEDs. We choose to put 10 LEDs rather than 9 because kindergarten children have difficulties understanding that 10 units is equal to 1 ten. (See Figure n°)</p>
+                    <p>The incrementation of the counter/LEDs is done using arcade buttons.</p>
+                    <p>Finally, when validating the result, a funny image is displayed on the screen to encourage children to play again.</p>
+                    <h2>6. Implementation</h2>
+                    <p>Link to Github : <a href="https://github.com/rouvelem/AVR">https://github.com/rouvelem/AVR</a></p>
+                    <p>It contains one Arduino file, and two C# files that only work on Unity. </p>
+                    <p>To implement the game we used: </p>
+                    <ul>
+                        <li>Arduino:  </li>
+                        <ul>
+                            <li>Adafruit_Neopixel library to control the led.</li>
+                            <li>Reference library to know when the buttons are pressed.</li>
+                        </ul>
+                        <li>Unity (C#) : to display the numbers and the validation animation.</li>
+                    </ul>
+                    <figure class="figure text-center">
+                        <img class="figure-imgimg-fluid rounded img-thumbnail" src="./img/build.jpg" alt="">
+                        <figcaption class="figure-caption">Fig. 1</figcaption>
+                    </figure>
+                    <h2>7. Experimental protocol</h2>
+                    <p>We tested our game in a kindergarten class (around 5 / 6 years old) for one day. </p>
+                    <p>We wanted to watch 4 things: </p>
+                    <ul>
+                        <li>if the children were more focused and entertained.</li>
+                        <li>compare this method with classical methods like abacus or counting with hands.</li>
+                        <li>watch the performance of the children.</li>
+                        <li>how high a student can count with each method.</li>
+                    </ul>
+                    <p>We take the children in groups of 3 such that they are not intimidated, and try to make groups with the same level of counting. </p>
+                    <figure class="figure text-center">
+                        <img class="figure-caption img-fluid rounded img-thumbnail" src="./img/class.jpg" alt="">
+                        <figcaption class="figure-caption">Fig. 2</figcaption>
+                    </figure>
+                    <figure class="figure text-center">
+                        <img class="figure-img img-fluid rounded img-thumbnail" src="./img/box.jpg" alt="">
+                        <figcaption class="figure-caption">Fig. 3</figcaption>
+                    </figure>
+                    <h2>8. Results and discussion</h2>
+                    <h3>General observation:</h3>
+                    <p>We were able to observe during this day that on average, the children were less dispersed with the educational games on computers than with the classic games. (4 other games to learn how to read and write were installed next to our new counting game). Maybe because each child can be in ”his own bubble”, instead of being at a table with others. and also because children don’t need to be corrected by the teacher since the computer makes it automatically. </p>
+                    <h3>Concerning the results about our game:</h3>
+                
+                    <dl class="row">
+                        <dt class="col-sm-5">Morning group (best performing groups)</dt>
+                        <dd class="col-sm-7">Understand easily the utility of each column of leds</dd>
+                        <dt class="col-sm-5">Afternoon group (groups with difficulties)</dt>
+                        <dd class="col-sm-7">Hard understanding of the difference between tens and units, difficulties with -1</dd>
+                
+                        <dt class="col-sm-5">Everyone</dt>
+                        <dd class="col-sm-7">Easy understanding of the rules and how to play, amused by the leds, want to play again, concentrated, understand how to use +10</dd>
+                    </dl>
+                    <figure class="figure text-center">
+                        <img class="figure-caption img-fluid rounded img-thumbnail" src="./img/graph.png" alt="">
+                        <figcaption class="figure-caption">Fig. 4</figcaption>
+                    </figure>
+                    <h3>To improve:</h3>
+                    <p>Since some children are lost with the units and the tens it could be interesting to add a digital counter on the box to help them. </p>
+                    <p>It could be interesting to have the possibility to add or remove some help from the computer depending on the level of the child who’s playing with it. </p>
+                    <h3>Teacher and children’s appreciation: </h3>
+                    <p>The teacher in charge of the group that we evaluated was really satisfied with our prototype.</p>
+                    <p>She found the idea and its implementation useful and relevant. More than that she was happy to work with a new learning tool after 30 years of experience in the education system.</p>
+                    <p>She would have liked to work with it for longer, as did the children who used it. They unanimously answered yes when asked if they wanted to keep the game.</p>
+                    <h2>9. Conclusion</h2>
+                    <p>There are not many studies of interactive educational devices for children. With this project we wanted to contribute to that field and provide an innovative way for kindergarten children to learn how to count. Our small experimental trial confirmed our intuition, the game captured the attention of the children and helped them to stay focused on the exercise provided. The device could also benefit from a small upgrade, namely a counter (a 7-segment display) next to the rows of LEDs, so that there is a direct (and instantaneous) feedback for the user. </p>
+                    <p>Our device does not aim at replacing the other learning methods. It is to be seen as a complementary device. The multitude of encoding (learning) methods is what makes the learning process efficient. For the children to learn efficiently, they need to be exposed to the same information, presented differently. For instance with an abacus or a numerical chart next to the device. </p>
+                    <p>To further confirm this first result a follow-up study would be interesting to conduct. This time with a larger population and over a longer period of time.</p>
+                </main>
+                <footer>
+                    <h2 class="display-6 text-uppercase fs-2 fw-lighter">References</h2>
+                    <p class="fw-lighter">[1] - Zaranis, Nicholas, and Vasiliki Valla. "Tablet computer assisted counting and calculating activities for kindergarten children." EDULEARN17 Proceedings, 9th International Conference on Education and New Learning Technologies. 2017.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
