@@ -68,7 +68,7 @@ nav[data-toggle="toc"] {
 .anchorjs-link {
   color: #a7a7a7;
   font-weight: 400;
-  transition: .1s;
+  transition: .2s;
   transform: translateX(4px);
 }
 .anchorjs-link:hover {
