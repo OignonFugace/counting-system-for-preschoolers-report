@@ -12,7 +12,10 @@ anchors.add();
 /* SCROLLSPY */
 // const menuElement = document.querySelector('#toc');
 // console.log(menuElement);
+// console.log(menuElement);
 // scrollSpy(menuElement);
+
+
 
 
 /* THEME SELECTOR */
