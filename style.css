@@ -40,6 +40,11 @@ h3 {
     justify-content: space-between;
 }
 
+.header-btn-wrapper {
+    display: flex;
+    gap: 8px;
+}
+
 .project-authors {
     margin-bottom: 100px;
 }
