@@ -67,7 +67,7 @@ nav[data-toggle="toc"] {
 /* Anchors */
 .anchorjs-link {
   color: #a7a7a7;
-  font-weight: 400;
+  font-weight: 200;
   transition: .2s;
   transform: translateX(4px);
 }
