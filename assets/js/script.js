@@ -1,4 +1,3 @@
-// import scrollSpy from 'simple-scrollspy';
 
 /* ANCHORS */
 anchors.options = {
@@ -10,18 +9,16 @@ anchors.add();
 
 
 /* SCROLLSPY */
-// const menuElement = document.querySelector('#toc');
-// console.log(menuElement);
-// console.log(menuElement);
-// scrollSpy(menuElement);
-
-
 $(document).ready(function(){
-  $('body').scrollspy({target: "#toc", offset: 50});   
+  $('body').scrollspy({target: "#toc"});   
 });
 
-/* THEME SELECTOR */
+// const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+//   target: '#toc'
+// })
 
+
+/* THEME SELECTOR */
 /*
  * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
