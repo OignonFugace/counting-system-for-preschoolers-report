@@ -9,7 +9,7 @@ p {
     line-height: 1.73rem;
 }
 
-#site-wrapper {
+.site-wrapper {
     max-width: 900px;
     margin: 0 auto;
     padding: 60px 2rem;
@@ -51,6 +51,11 @@ h3 {
 
 .project-authors p {
     margin: 0;
+}
+
+/* CREDENTIALS */
+.credentials {
+  color: #3a3a3a;
 }
 
 /* TOC NAV */
