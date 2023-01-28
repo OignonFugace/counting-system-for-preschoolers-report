@@ -16,7 +16,9 @@ anchors.add();
 // scrollSpy(menuElement);
 
 
-
+$(document).ready(function(){
+  $('body').scrollspy({target: "#toc", offset: 50});   
+});
 
 /* THEME SELECTOR */
 
