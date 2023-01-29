@@ -75,11 +75,11 @@ nav[data-toggle="toc"] {
 
 /* Anchors */
 .anchorjs-link {
-  color: #a7a7a7;
+  color: var(--bs-tertiary-color);
   font-weight: 200;
-  transition: .2s;
+  transition: .15s;
   transform: translateX(4px);
 }
 .anchorjs-link:hover {
-  color: #3a3a3a;
+  color: var(--bs-body-color);
 }

@@ -6,9 +6,6 @@
 
 /* modified from https://github.com/twbs/bootstrap/blob/94b4076dd2efba9af71f0b18d4ee4b163aa9e0dd/docs/assets/css/src/docs.css#L548-L601 */
 
-:root {
-    --nav-color-theme: #3a3a3a;
-}
 
 /* All levels of nav */
 nav[data-toggle="toc"] .nav > li > a {
@@ -16,24 +13,24 @@ nav[data-toggle="toc"] .nav > li > a {
   padding: 4px 20px;
   font-size: 13px;
   font-weight: 500;
-  color: #767676;
+  color: var(--bs-tertiary-color);
 }
 nav[data-toggle="toc"] .nav > li > a:hover,
 nav[data-toggle="toc"] .nav > li > a:focus {
   padding-left: 19px;
-  color: var(--nav-color-theme);
+  color: var(--bs-body-color);
   text-decoration: none;
   background-color: transparent;
-  border-left: 1px solid var(--nav-color-theme);
+  border-left: 1px solid var(--bs-body-color);
 }
 nav[data-toggle="toc"] .nav-link.active,
 nav[data-toggle="toc"] .nav-link.active:hover,
 nav[data-toggle="toc"] .nav-link.active:focus {
   padding-left: 18px;
   font-weight: bold;
-  color: var(--nav-color-theme);
+  color: var(--bs-body-color);
   background-color: transparent;
-  border-left: 2px solid var(--nav-color-theme);
+  border-left: 2px solid var(--bs-body-color);
 }
 
 /* Nav: second level (shown on .active) */
