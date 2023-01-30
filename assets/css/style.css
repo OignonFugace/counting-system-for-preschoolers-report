@@ -99,7 +99,16 @@ nav[data-toggle="toc"] .nav > li > a {
   font-weight: 500;
   color: var(--bs-tertiary-color);
 
-  --led-color: brown;
+  --led-red: rgb(255, 0, 0);
+  --led-orange: rgb(255, 128, 0);
+  --led-yellow: rgb(255, 255, 0);
+  --led-green: rgb(0, 255, 0);
+  --led-light-blue: rgb(0, 255, 255);
+  --led-med-blue: rgb(0, 127, 255);
+  --led-navy-blue: rgb(0, 0, 255);
+  --led-purple: rgb(127, 0, 255);
+  --led-pink: rgb(255, 0, 127);
+  --led-white: rgb(255, 255, 255);
 }
 
 nav[data-toggle="toc"] .nav > li > a:hover,
@@ -184,12 +193,67 @@ html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a::before {
   position: absolute;
   content: '';
   display: block;
-  height: .9rem;
-  width: .9rem;
-  background-color: var(--led-color);
-  transform: translate(-1.5rem, 3px);
+  height: .8rem;
+  width: .8rem;
+  border-radius: 2px;
+  box-shadow: 0 0 2px currentColor;
+  transform: translate(-1.5rem, 4px);
   opacity: 0;
 }
+
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#context"]::before {
+  color: var(--led-red);
+  background-color: var(--led-red);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#explanation-of-problem"]::before {
+  color: var(--led-navy-blue);
+  background-color: var(--led-navy-blue);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#related-work"]::before {
+  color: var(--led-yellow);
+  background-color: var(--led-yellow);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#approach-to-the-problem"]::before {
+  color: var(--led-green);
+  background-color: var(--led-green);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#implementation"]::before {
+  color: var(--led-light-blue);
+  background-color: var(--led-light-blue);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#experimental-protocol"]::before {
+  color: var(--led-pink);
+  background-color: var(--led-pink);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#results-and-discussion"]::before {
+  color: var(--led-orange);
+  background-color: var(--led-orange);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#general-observation"]::before {
+  color: var(--led-purple);
+  background-color: var(--led-purple);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#concerning-the-results-about-our-game"]::before {
+  color: var(--led-med-blue);
+  background-color: var(--led-med-blue);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#to-improve"]::before {
+  color: var(--led-white);
+  background-color: var(--led-white);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#teacher-and-childrens-appreciation"]::before {
+  color: var(--led-red);
+  background-color: var(--led-red);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#conclusion"]::before {
+  color: var(--led-navy-blue);
+  background-color: var(--led-navy-blue);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#reference"]::before {
+  color: var(--led-yellow);
+  background-color: var(--led-yellow);
+}
+
 
 html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a:hover::before,
 html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a:focus::before,
