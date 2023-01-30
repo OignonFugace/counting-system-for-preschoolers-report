@@ -1,4 +1,17 @@
 
+:root {
+  --led-red: rgb(255, 0, 0);
+  --led-orange: rgb(255, 128, 0);
+  --led-yellow: rgb(255, 255, 0);
+  --led-green: rgb(0, 255, 0);
+  --led-light-blue: rgb(0, 255, 255);
+  --led-med-blue: rgb(0, 127, 255);
+  --led-navy-blue: rgb(0, 0, 255);
+  --led-purple: rgb(127, 0, 255);
+  --led-pink: rgb(255, 0, 127);
+  --led-white: rgb(255, 255, 255);
+}
+
 /* CUSTOM LAYOUT & GLOBALS */
 body {
     font-size: 1.1rem;
@@ -99,16 +112,6 @@ nav[data-toggle="toc"] .nav > li > a {
   font-weight: 500;
   color: var(--bs-tertiary-color);
 
-  --led-red: rgb(255, 0, 0);
-  --led-orange: rgb(255, 128, 0);
-  --led-yellow: rgb(255, 255, 0);
-  --led-green: rgb(0, 255, 0);
-  --led-light-blue: rgb(0, 255, 255);
-  --led-med-blue: rgb(0, 127, 255);
-  --led-navy-blue: rgb(0, 0, 255);
-  --led-purple: rgb(127, 0, 255);
-  --led-pink: rgb(255, 0, 127);
-  --led-white: rgb(255, 255, 255);
 }
 
 nav[data-toggle="toc"] .nav > li > a:hover,
