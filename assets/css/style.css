@@ -283,10 +283,47 @@ html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav .nav > li > a::before {
 }
 
 html[data-bs-theme="dark"] .anchorjs-link {
-  color: var(--bs-tertiary-color);
-  font-weight: 200;
-  transition: .15s;
-  transform: translateX(4px);
+  text-shadow: 0 0 6px currentColor;
+}
+
+html[data-bs-theme="dark"] .anchorjs-link[href="#context"] {
+  color: var(--led-red);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#explanation-of-problem"] {
+  color: var(--led-navy-blue);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#related-work"] {
+  color: var(--led-yellow);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#approach-to-the-problem"] {
+  color: var(--led-green);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#implementation"] {
+  color: var(--led-light-blue);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#experimental-protocol"] {
+  color: var(--led-pink);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#results-and-discussion"] {
+  color: var(--led-orange);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#general-observation"] {
+  color: var(--led-purple);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#concerning-the-results-about-our-game"] {
+  color: var(--led-med-blue);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#to-improve"] {
+  color: var(--led-white);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#teacher-and-childrens-appreciation"] {
+  color: var(--led-red);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#conclusion"] {
+  color: var(--led-navy-blue);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#reference"] {
+  color: var(--led-yellow);
 }
 
 
