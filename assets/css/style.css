@@ -61,6 +61,11 @@ p {
   opacity: .7;
 }
 
+.credentials-section p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .credentials-section__site-wrapper {
   display: flex;
   justify-content: center;
