@@ -54,8 +54,16 @@ h3 {
 }
 
 /* CREDENTIALS */
-.credentials {
-  color: #3a3a3a;
+
+.credentials-section {
+  text-align: center;
+  background-color:  --bs-tertiary-bg;
+  color: --bs-tertiary-color;
+}
+
+.credentials-section .site-wrapper {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* TOC NAV */
