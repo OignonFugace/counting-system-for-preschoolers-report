@@ -1,18 +1,13 @@
 
-/* LAYOUT & GLOBALS */
-
+/* CUSTOM LAYOUT & GLOBALS */
 body {
     font-size: 1.1rem;
-}
-
-p {
-    line-height: 1.73rem;
 }
 
 .site-wrapper {
     max-width: 900px;
     margin: 0 auto;
-    padding: 60px 2rem;
+    padding: 60px 1rem;
 }
 
 main {
@@ -34,6 +29,11 @@ h3 {
     margin-bottom: 1rem;
 }
 
+p {
+    line-height: 1.73rem;
+}
+
+
 /* HEADER */
 .header-wrapper {
     display: flex;
@@ -53,8 +53,8 @@ h3 {
     margin: 0;
 }
 
-/* CREDENTIALS */
 
+/* CREDENTIALS */
 .credentials-section {
   color: var(--bs-tertiary-color);
   background-color: var(--bs-tertiary-bg);
@@ -107,4 +107,23 @@ nav[data-toggle="toc"] {
 }
 .anchorjs-link:hover {
   color: var(--bs-body-color);
+}
+
+
+@media screen and (max-width: 575px) {
+  body {
+    font-size: .9rem;
+  }
+
+  p {
+    line-height: 1.6rem;
+  }
+
+  .header-btn-wrapper {
+    flex-direction: column;
+  }
+
+  .header-btn-wrapper button {
+    width: 100%;
+  }
 }
