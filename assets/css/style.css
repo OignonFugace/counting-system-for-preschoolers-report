@@ -56,14 +56,26 @@ h3 {
 /* CREDENTIALS */
 
 .credentials-section {
-  text-align: center;
-  background-color:  --bs-tertiary-bg;
-  color: --bs-tertiary-color;
+  color: var(--bs-tertiary-color);
+  background-color: var(--bs-tertiary-bg);
+  opacity: .7;
 }
 
-.credentials-section .site-wrapper {
+.credentials-section__site-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.credentials-section a {
+  text-decoration: none;
+}
+
+.credentials-section i {
+  display: inline;
+  color: var(--bs-tertiary-color);
 }
 
 /* TOC NAV */
