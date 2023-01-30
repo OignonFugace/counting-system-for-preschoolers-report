@@ -348,6 +348,7 @@ html[data-bs-theme="dark"] .anchorjs-link[href="#reference"] {
 
   .header-btn-wrapper {
     flex-direction: column;
+    gap: 8px;
   }
 
   .header-btn-wrapper button {
