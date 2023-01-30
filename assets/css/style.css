@@ -264,7 +264,7 @@ html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav-link.active:focus::before
 }
 
 html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav .nav > li > a::before {
-  transform: translateX(calc(-1.5rem - 10px));
+  transform: translateX(calc(-1.4rem - 10px));
 }
 
 
@@ -278,6 +278,14 @@ html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav .nav > li > a::before {
 .anchorjs-link:hover {
   color: var(--bs-body-color);
 }
+
+html[data-bs-theme="dark"] .anchorjs-link {
+  color: var(--bs-tertiary-color);
+  font-weight: 200;
+  transition: .15s;
+  transform: translateX(4px);
+}
+
 
 
 @media screen and (max-width: 575px) {
