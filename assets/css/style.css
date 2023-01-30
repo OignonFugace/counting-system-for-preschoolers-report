@@ -98,6 +98,8 @@ nav[data-toggle="toc"] .nav > li > a {
   font-size: 13px;
   font-weight: 500;
   color: var(--bs-tertiary-color);
+
+  --led-color: brown;
 }
 
 nav[data-toggle="toc"] .nav > li > a:hover,
@@ -184,7 +186,7 @@ html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a::before {
   display: block;
   height: .9rem;
   width: .9rem;
-  background-color: brown;
+  background-color: var(--led-color);
   transform: translate(-1.5rem, 3px);
   opacity: 0;
 }
@@ -200,10 +202,6 @@ html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav-link.active:focus::before
 html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav .nav > li > a::before {
   transform: translateX(calc(-1.5rem - 10px));
 }
-
-
-
-
 
 
 /* ANCHORS */

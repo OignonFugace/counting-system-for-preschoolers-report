@@ -96,7 +96,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
 /* DARK THEME CUSTOM STYLES */
 
-window.addEventListener('DOMContentLoaded', () => {
-  const navLinkPseudoElements = document.querySelectorAll('html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a::before');
-  console.log(navLinkPseudoElements);
-});
+// window.addEventListener('DOMContentLoaded', () => {
+//   const nav = document.querySelector("#toc");
+//   const navList = nav.firstElementChild;
+//   console.log(nav);
+//   console.log(navList);
+// });
