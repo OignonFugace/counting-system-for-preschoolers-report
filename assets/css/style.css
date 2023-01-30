@@ -109,9 +109,9 @@ nav[data-toggle="toc"] .nav > li > a:focus {
   border-left: 1px solid var(--bs-body-color);
 }
 
-nav[data-toggle="toc"] .nav-link.active,
-nav[data-toggle="toc"] .nav-link.active:hover,
-nav[data-toggle="toc"] .nav-link.active:focus {
+nav[data-toggle="toc"] .nav > li > a.active,
+nav[data-toggle="toc"] .nav > li > a.active:hover,
+nav[data-toggle="toc"] .nav > li > a.active:focus {
   padding-left: 18px;
   font-weight: bold;
   color: var(--bs-body-color);
@@ -174,14 +174,11 @@ html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav .nav > li > .active:focus
 
 
 /* Pseudo element */
-
-html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a,
 html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a,
 html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav-link.active {
   position: relative;
 }
 
-html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a::before,
 html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a::before,
 html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav-link.active::before {
   position: absolute;
@@ -203,7 +200,6 @@ html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav-link.active:focus::before
   opacity: 1;
 }
 
-html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav .nav > li > a::before,
 html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav .nav > li > a::before,
 html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav .nav > li > .active::before {
   transform: translateX(calc(-1.5rem - 10px));
