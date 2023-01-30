@@ -9,7 +9,7 @@ p {
     line-height: 1.73rem;
 }
 
-#site-wrapper {
+.site-wrapper {
     max-width: 900px;
     margin: 0 auto;
     padding: 60px 2rem;
@@ -51,6 +51,31 @@ h3 {
 
 .project-authors p {
     margin: 0;
+}
+
+/* CREDENTIALS */
+
+.credentials-section {
+  color: var(--bs-tertiary-color);
+  background-color: var(--bs-tertiary-bg);
+  opacity: .7;
+}
+
+.credentials-section__site-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.credentials-section a {
+  text-decoration: none;
+}
+
+.credentials-section i {
+  display: inline;
+  color: var(--bs-tertiary-color);
 }
 
 /* TOC NAV */
