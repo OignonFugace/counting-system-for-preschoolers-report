@@ -1,4 +1,17 @@
 
+:root {
+  --led-red: rgb(255, 0, 0);
+  --led-orange: rgb(255, 128, 0);
+  --led-yellow: rgb(255, 255, 0);
+  --led-green: rgb(0, 255, 0);
+  --led-light-blue: rgb(0, 255, 255);
+  --led-med-blue: rgb(0, 127, 255);
+  --led-navy-blue: rgb(0, 0, 255);
+  --led-purple: rgb(127, 0, 255);
+  --led-pink: rgb(255, 0, 127);
+  --led-white: rgb(255, 255, 255);
+}
+
 /* CUSTOM LAYOUT & GLOBALS */
 body {
     font-size: 1.1rem;
@@ -88,19 +101,6 @@ nav[data-toggle="toc"] {
   top: 42px;
 }
 
-/* small screens */
-@media (max-width: 768px) {
-  /* override stickyness so that the navigation does not follow scrolling */
-  nav[data-toggle="toc"] {
-    margin-bottom: 42px;
-    position: static;
-  }
-
-  /* don't expand nested items, which pushes down the rest of the page when navigating */
-  nav[data-toggle="toc"] .nav .active .nav {
-    display: none;
-  }
-}
 
 /*!
  * Bootstrap Table of Contents v1.0.1 (http://afeld.github.io/bootstrap-toc/)
@@ -116,7 +116,9 @@ nav[data-toggle="toc"] .nav > li > a {
   font-size: 13px;
   font-weight: 500;
   color: var(--bs-tertiary-color);
+
 }
+
 nav[data-toggle="toc"] .nav > li > a:hover,
 nav[data-toggle="toc"] .nav > li > a:focus {
   padding-left: 19px;
@@ -125,9 +127,10 @@ nav[data-toggle="toc"] .nav > li > a:focus {
   background-color: transparent;
   border-left: 1px solid var(--bs-body-color);
 }
-nav[data-toggle="toc"] .nav-link.active,
-nav[data-toggle="toc"] .nav-link.active:hover,
-nav[data-toggle="toc"] .nav-link.active:focus {
+
+nav[data-toggle="toc"] .nav > li > a.active,
+nav[data-toggle="toc"] .nav > li > a.active:hover,
+nav[data-toggle="toc"] .nav > li > a.active:focus {
   padding-left: 18px;
   font-weight: bold;
   color: var(--bs-body-color);
@@ -163,6 +166,114 @@ nav[data-toggle="toc"] .nav-link.active + ul {
   display: block;
 }
 
+/* Dark theme overwrite */
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a:hover,
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a:focus {
+  padding-left: 20px;
+  border-left: none;
+}
+
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav-link.active,
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav-link.active:hover,
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav-link.active:focus {
+  padding-left: 20px;
+  border-left: none;
+}
+
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav .nav > li > a:hover,
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav .nav > li > a:focus {
+  padding-left: 30px;
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav .nav > li > .active,
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav .nav > li > .active:hover,
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav .nav > li > .active:focus {
+  padding-left: 30px;
+  font-weight: 500;
+}
+
+
+/* Pseudo element */
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a {
+  position: relative;
+}
+
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a::before {
+  position: absolute;
+  content: '';
+  display: block;
+  height: .6rem;
+  width: .6rem;
+  border-radius: 2px;
+  box-shadow: 0 0 6px currentColor;
+  transform: translate(-1.4rem, 5px);
+  opacity: 0;
+}
+
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#context"]::before {
+  color: var(--led-red);
+  background-color: var(--led-red);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#explanation-of-problem"]::before {
+  color: var(--led-navy-blue);
+  background-color: var(--led-navy-blue);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#related-work"]::before {
+  color: var(--led-yellow);
+  background-color: var(--led-yellow);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#approach-to-the-problem"]::before {
+  color: var(--led-green);
+  background-color: var(--led-green);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#implementation"]::before {
+  color: var(--led-light-blue);
+  background-color: var(--led-light-blue);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#experimental-protocol"]::before {
+  color: var(--led-pink);
+  background-color: var(--led-pink);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#results-and-discussion"]::before {
+  color: var(--led-orange);
+  background-color: var(--led-orange);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#general-observation"]::before {
+  color: var(--led-purple);
+  background-color: var(--led-purple);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#concerning-the-results-about-our-game"]::before {
+  color: var(--led-med-blue);
+  background-color: var(--led-med-blue);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#to-improve"]::before {
+  color: var(--led-white);
+  background-color: var(--led-white);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#teacher-and-childrens-appreciation"]::before {
+  color: var(--led-red);
+  background-color: var(--led-red);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#conclusion"]::before {
+  color: var(--led-navy-blue);
+  background-color: var(--led-navy-blue);
+}
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#reference"]::before {
+  color: var(--led-yellow);
+  background-color: var(--led-yellow);
+}
+
+
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a:hover::before,
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a:focus::before,
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav-link.active::before,
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav-link.active:hover::before,
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav-link.active:focus::before {
+  opacity: 1;
+}
+
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav .nav > li > a::before {
+  transform: translateX(calc(-1.4rem - 10px));
+}
 
 
 /* ANCHORS */
@@ -175,6 +286,51 @@ nav[data-toggle="toc"] .nav-link.active + ul {
 .anchorjs-link:hover {
   color: var(--bs-body-color);
 }
+
+html[data-bs-theme="dark"] .anchorjs-link {
+  text-shadow: 0 0 6px currentColor;
+}
+
+html[data-bs-theme="dark"] .anchorjs-link[href="#context"] {
+  color: var(--led-red);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#explanation-of-problem"] {
+  color: var(--led-navy-blue);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#related-work"] {
+  color: var(--led-yellow);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#approach-to-the-problem"] {
+  color: var(--led-green);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#implementation"] {
+  color: var(--led-light-blue);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#experimental-protocol"] {
+  color: var(--led-pink);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#results-and-discussion"] {
+  color: var(--led-orange);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#general-observation"] {
+  color: var(--led-purple);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#concerning-the-results-about-our-game"] {
+  color: var(--led-med-blue);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#to-improve"] {
+  color: var(--led-white);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#teacher-and-childrens-appreciation"] {
+  color: var(--led-red);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#conclusion"] {
+  color: var(--led-navy-blue);
+}
+html[data-bs-theme="dark"] .anchorjs-link[href="#reference"] {
+  color: var(--led-yellow);
+}
+
 
 
 @media screen and (max-width: 575px) {

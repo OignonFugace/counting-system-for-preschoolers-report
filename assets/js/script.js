@@ -92,3 +92,13 @@ window.addEventListener('DOMContentLoaded', () => {
       })
   })
 })()
+
+
+/* DARK THEME CUSTOM STYLES */
+
+// window.addEventListener('DOMContentLoaded', () => {
+//   const nav = document.querySelector("#toc");
+//   const navList = nav.firstElementChild;
+//   console.log(nav);
+//   console.log(navList);
+// });
