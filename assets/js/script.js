@@ -1,6 +1,3 @@
-/* Loads bootstrap */
-import bootstrap from 'bootstrap';
-
 /* ANCHORS */
 anchors.options = {
     placement: 'left',
