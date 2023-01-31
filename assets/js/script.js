@@ -11,28 +11,26 @@ anchors.add();
 /* SCROLLSPY */
 window.addEventListener('DOMContentLoaded', () => {
 
+  
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('data-id');
+      if (entry.intersectionRatio > 0) {
+        document.querySelector(`nav li a[href="#${id}"]`).classList.add('active');
+      } else {
+        document.querySelector(`nav li a[href="#${id}"]`).classList.remove('active');
+      }
+    });
+  });
+  
   setTimeout(() => {
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        const id = entry.target.getAttribute('data-id');
-        if (entry.intersectionRatio > 0) {
-          // const navItem = document.querySelector(`#toc ul li a[href="#${id}"]`);
-          document.querySelector(`nav li a[href="#${id}"]`).classList.add('active');
-        } else {
-          document.querySelector(`nav li a[href="#${id}"]`).classList.remove('active');
-        }
-      });
-    });
-
     // Track all sections that have an `id` applied
-    // const dataId = document.querySelector('section[data-id]');
-    // console.log(dataId);
     document.querySelectorAll('section[data-id]').forEach((section) => {
       observer.observe(section);
     });
 
-  }, 1000);
+  }, 600);
 
 	
 });
