@@ -263,11 +263,7 @@ html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a[href="#reference
 }
 
 
-html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a:hover::before,
-html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav > li > a:focus::before,
-html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav-link.active::before,
-html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav-link.active:hover::before,
-html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav-link.active:focus::before {
+html[data-bs-theme="dark"] nav[data-toggle="toc"] .nav-link.active::before {
   opacity: 1;
 }
 
