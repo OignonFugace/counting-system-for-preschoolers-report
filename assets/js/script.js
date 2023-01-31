@@ -1,4 +1,3 @@
-
 /* ANCHORS */
 anchors.options = {
     placement: 'left',
@@ -10,7 +9,6 @@ anchors.add();
 
 /* SCROLLSPY */
 window.addEventListener('DOMContentLoaded', () => {
-
   
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -32,7 +30,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   }, 600);
 
-	
 });
 
 /* THEME SELECTOR */
@@ -46,7 +43,6 @@ window.addEventListener('DOMContentLoaded', () => {
   'use strict'
 
   const storedTheme = localStorage.getItem('theme')
-
   const getPreferredTheme = () => {
     if (storedTheme) {
       return storedTheme
