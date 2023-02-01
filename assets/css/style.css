@@ -361,4 +361,8 @@ html[data-bs-theme="dark"] .anchorjs-link[href="#reference"] {
   .header-btn-wrapper button {
     width: 100%;
   }
+
+  .anchorjs-link {
+    display: none;
+  }
 }
