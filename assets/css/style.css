@@ -365,4 +365,8 @@ html[data-bs-theme="dark"] .anchorjs-link[href="#reference"] {
   .anchorjs-link {
     display: none;
   }
+
+  #toc {
+    display: none;
+  }
 }
