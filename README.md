@@ -1,4 +1,4 @@
-# Manon's report
+# Counting system for preschoolers report
 
 Cette page web accompagne la présentation d'un projet de master réalisé par Benjamin Le Carrer et Manon Rouvelet, réalisé à leur demande. 
 
