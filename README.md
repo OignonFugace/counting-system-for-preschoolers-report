@@ -8,4 +8,4 @@ Cette page web accompagne la présentation d'un projet de master réalisé par B
 - Bouton de téléchargement du rapport sous forme de pdf.
 
 ## Déploiement
-- [Counting system for preschoolers](https://oignonfugace.github.io/manons-report/)
+- [Counting system for preschoolers](https://oignonfugace.github.io/counting-system-for-preschoolers-report/)
